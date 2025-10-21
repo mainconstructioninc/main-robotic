@@ -3,9 +3,7 @@ import HomePage from "@/components/views/Home";
 
 export default function Home() {
   return (
-    <LandingPageLayout
-      textactive="text-black"
-    >
+    <LandingPageLayout>
       <HomePage />
     </LandingPageLayout>
   );
