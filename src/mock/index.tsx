@@ -1,9 +1,25 @@
-import { Zap, Shield, TrendingUp, CheckCircle, LucideIcon, Building2, Factory, Home, Heart, GraduationCap, Hotel, Building, Server, Utensils,Square,
+import {
+  Zap,
+  Shield,
+  TrendingUp,
+  CheckCircle,
+  LucideIcon,
+  Building2,
+  Factory,
+  Home,
+  Heart,
+  GraduationCap,
+  Hotel,
+  Building,
+  Server,
+  Utensils,
+  Square,
   Sun,
   Wind,
   Bath,
   Layers,
-  Droplet, } from "lucide-react";
+  Droplet,
+} from "lucide-react";
 
 export interface HeroData {
   tagline: string;
@@ -50,6 +66,7 @@ export interface ContactData {
   phone: string;
   email: string;
   hours: string;
+  website: string;
   mapCoordinates: {
     lat: number;
     lng: number;
@@ -340,11 +357,12 @@ export const aboutData: AboutData = {
 };
 
 export const contactData: ContactData = {
-  address: "AXA Tower LT 36, Jakarta, Indonesia",
+  address: "2150 S. Central Expressway, McKinney, Texas 75070",
   phone: "+1 (555) 123-4567",
-  email: "info@mainrobotic.com",
+  email: "mainconstruction.inc@gmail.com",
   hours: "Monday - Friday: 8:00 AM - 6:00 PM",
-  mapCoordinates: { lat: 40.7128, lng: -74.006 },
+  website: "MainCo.io",
+  mapCoordinates: { lat: 33.18263025597258, lng: -96.64178004624722 },
 };
 
 export const features: FeatureData[] = [

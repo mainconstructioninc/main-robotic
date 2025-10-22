@@ -3,7 +3,7 @@
 import { contactData } from "@/mock";
 import { Input, Textarea, addToast } from "@heroui/react";
 import React, { useState, ChangeEvent, FormEvent } from "react";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, MapPin, Globe } from "lucide-react";
 
 interface FormData {
   name: string;
@@ -83,7 +83,7 @@ const Contact: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-3">
+                  {/* <div className="flex items-start space-x-3">
                     <div className="bg-blue-900 p-3 rounded-xl">
                       <Phone className="text-white" size={20} />
                     </div>
@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
                         {contactData.phone}
                       </p>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="flex items-start space-x-3">
                     <div className="bg-blue-900 p-3 rounded-xl">
@@ -109,14 +109,14 @@ const Contact: React.FC = () => {
 
                   <div className="flex items-start space-x-3">
                     <div className="bg-blue-900 p-3 rounded-xl">
-                      <Clock className="text-white" size={20} />
+                      <Globe className="text-white" size={20} />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">
-                        Business Hours
+                        Website
                       </h4>
                       <p className="text-gray-600 text-sm">
-                        {contactData.hours}
+                        {contactData.website}
                       </p>
                     </div>
                   </div>
@@ -127,7 +127,7 @@ const Contact: React.FC = () => {
                 <div className="w-full h-64">
                   <iframe
                     title="Company Location"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.318806193609!2d106.82230972475058!3d-6.221626043766409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3052dc956d1%3A0x694dc3f20374c328!2sAXA%20TOWER!5e0!3m2!1sid!2sid!4v1761055780773!5m2!1sid!2sid"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3339.2082949274172!2d-96.64437642452229!3d33.182405773496825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c13c2ce5f1bdb%3A0x8baf798e48af393e!2s2150%20S%20Central%20Expy%2C%20McKinney%2C%20TX%2075072%2C%20Amerika%20Serikat!5e0!3m2!1sid!2sid!4v1761105797848!5m2!1sid!2sid"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}

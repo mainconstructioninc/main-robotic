@@ -24,8 +24,13 @@ const fadeUp: Variants = {
 const HomePage = () => {
   return (
     <div className="min-h-screen overflow-hidden">
-      <section className="h-screen bg-blue-50 flex flex-col md:flex-row items-center justify-center">
-        <div className="relative h-screen max-w-7xl flex flex-col md:flex-row items-center justify-center">
+      <section className="relative h-screen bg-blue-50 flex flex-col md:flex-row items-center justify-center overflow-hidden">
+        {/* Background shapes */}
+        <div className="absolute top-10 left-10 w-40 h-40 bg-red-200 rounded-full opacity-20 blur-3xl animate-pulse-slow z-10"></div>
+        <div className="absolute top-1/3 right-20 w-48 h-48 bg-blue-300 rounded-xl opacity-15 blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-20 left-1/4 w-32 h-32 bg-blue-100 rounded-full opacity-25 blur-3xl animate-pulse-slow"></div>
+
+        <div className="relative h-screen max-w-7xl flex flex-col md:flex-row items-center justify-center z-10">
           <motion.div
             className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left"
             initial="hidden"

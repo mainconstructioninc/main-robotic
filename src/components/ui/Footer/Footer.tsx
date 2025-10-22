@@ -1,14 +1,15 @@
 import React from "react";
 import {
   Mail,
-  Phone,
   MapPin,
   Facebook,
   Twitter,
   Linkedin,
   Instagram,
+  Globe,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -17,8 +18,17 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
+            <Link href="/" className="flex items-center space-x-3">
+              <Image
+                src="/logomain.png"
+                alt="Logo"
+                width={50}
+                height={50}
+                className="w-16 object-contain"
+              />
+            </Link>
+
             <h3 className="text-xl font-bold mb-4">
-              MainCo
               <span className="block text-sm font-normal text-blue-400 mt-1">
                 Construction Corporation
               </span>
@@ -125,15 +135,20 @@ const Footer = () => {
                   size={18}
                   className="text-blue-400 mt-1 flex-shrink-0"
                 />
-                <span className="text-gray-400 text-sm">asdsa</span>
+                <span className="text-gray-400 text-sm">
+                  2150 S. Central Expressway, McKinney, Texas 75070
+                </span>
               </li>
-              <li className="flex items-center space-x-3">
-                <Phone size={18} className="text-blue-400 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">asd</span>
-              </li>
+
               <li className="flex items-center space-x-3">
                 <Mail size={18} className="text-blue-400 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">asdas</span>
+                <span className="text-gray-400 text-sm">
+                  mainconstruction.inc@gmail.com
+                </span>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Globe size={18} className="text-blue-400 flex-shrink-0" />
+                <span className="text-gray-400 text-sm">MainCo.io</span>
               </li>
             </ul>
           </div>
