@@ -51,6 +51,7 @@ export interface AboutValue {
 export interface AboutStat {
   value: string;
   label: string;
+  description: string;
 }
 
 export interface AboutData {
@@ -348,19 +349,43 @@ export const aboutData: AboutData = {
     "National Construction Excellence Award 2023",
     "Green Building Certification",
   ],
+
   stats: [
-    { value: "500+", label: "Projects Completed" },
-    { value: "25", label: "Years Experience" },
-    { value: "98%", label: "Client Satisfaction" },
-    { value: "1000+", label: "Team Members" },
+    {
+      value: "500+",
+      label: "Projects Delivered",
+      description: "Across commercial, industrial, and healthcare programs",
+    },
+    {
+      value: "25+",
+      label: "Leadership Tenure",
+      description: "Combined years guiding preconstruction through handover",
+    },
+    {
+      value: "98%",
+      label: "Client Confidence",
+      description: "Reinforced by repeat engagements and documented closeouts",
+    },
+    {
+      value: "Core Network",
+      label: "Leadership & Delivery Network",
+      description:
+        "Directors supported by a vetted partner network—prequalified trades, commissioning specialists, and QA advisors aligned to our delivery playbook",
+    },
   ],
+  // stats: [
+  //   { value: "500+", label: "Projects Delivered" },
+  //   { value: "25", label: "Leadership Tenure" },
+  //   { value: "98%", label: "Client Confidence" },
+  //   { value: "1000+", label: "Leadership & Delivery Network" },
+  // ],
 };
 
 export const contactData: ContactData = {
-  address: "2150 S. Central Expressway, McKinney, Texas 75070",
+  address: "2150 North Central Expressway McKinney, TX 75070-3508 ",
   phone: "+1 (555) 123-4567",
-  email: "mainconstruction.inc@gmail.com",
-  hours: "Monday - Friday: 8:00 AM - 6:00 PM",
+  email: "support@mainco.io",
+  hours: "Typical Response Time: 3–5 business days",
   website: "MainCo.io",
   mapCoordinates: { lat: 33.18263025597258, lng: -96.64178004624722 },
 };
@@ -379,7 +404,7 @@ export const features: FeatureData[] = [
   {
     icon: TrendingUp,
     title: "Proven Track Record",
-    desc: "Over 500 successful projects delivered with 98% client satisfaction rate.",
+    desc: "Backed by 500+ completions and 98% client satisfaction, we deliver with robotic layout, strict change control, and proactive coordination to meet milestones and pass third-party inspections.",
   },
   {
     icon: CheckCircle,

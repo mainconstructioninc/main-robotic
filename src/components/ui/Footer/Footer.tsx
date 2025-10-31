@@ -2,10 +2,10 @@ import React from "react";
 import {
   Mail,
   MapPin,
-  Facebook,
-  Twitter,
-  Linkedin,
-  Instagram,
+  // Facebook,
+  // Twitter,
+  // Linkedin,
+  // Instagram,
   Globe,
 } from "lucide-react";
 import Link from "next/link";
@@ -37,7 +37,7 @@ const Footer = () => {
               Building the future with robotic precision and innovative
               engineering solutions.
             </p>
-            <div className="flex space-x-4 mt-6">
+            {/* <div className="flex space-x-4 mt-6">
               <a
                 href="#"
                 className="text-gray-400 hover:text-blue-400 transition-colors"
@@ -62,7 +62,7 @@ const Footer = () => {
               >
                 <Instagram size={20} />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -136,29 +136,40 @@ const Footer = () => {
                   className="text-blue-400 mt-1 flex-shrink-0"
                 />
                 <span className="text-gray-400 text-sm">
-                  2150 S. Central Expressway, McKinney, Texas 75070
+                  2150 North Central Expressway McKinney, TX 75070-3508
                 </span>
               </li>
 
               <li className="flex items-center space-x-3">
                 <Mail size={18} className="text-blue-400 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">
-                  mainconstruction.inc@gmail.com
-                </span>
+                <span className="text-gray-400 text-sm">support@mainco.io</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Globe size={18} className="text-blue-400 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">MainCo.io</span>
+                <span className="text-gray-400 text-sm">Mainco.io</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Main Robotic Construction Corporation.
-            All rights reserved.
+        <div className="border-t flex justify-between border-gray-800 mt-8 pt-8 text-center">
+          <p className="text-gray-400 text-sm mb-2">
+            © 2025 Main Construction Inc. | All Rights Reserved
           </p>
+          <div className="flex flex-wrap justify-center gap-4 text-gray-400 text-sm">
+            <a href="/privacy" className="hover:underline">
+              Privacy Policy
+            </a>
+            <a href="/terms" className="hover:underline">
+              Terms of Use
+            </a>
+            <a href="/cookies" className="hover:underline">
+              Cookie Policy
+            </a>
+            <a href="/disclaimer" className="hover:underline">
+              Disclaimer
+            </a>
+          </div>
         </div>
       </div>
     </footer>

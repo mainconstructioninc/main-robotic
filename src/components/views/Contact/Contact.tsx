@@ -3,7 +3,7 @@
 import { contactData } from "@/mock";
 import { Input, Textarea, addToast } from "@heroui/react";
 import React, { useState, ChangeEvent, FormEvent } from "react";
-import { Mail, MapPin, Globe } from "lucide-react";
+import { Mail, MapPin, Clock } from "lucide-react";
 
 interface FormData {
   name: string;
@@ -66,8 +66,8 @@ const Contact: React.FC = () => {
                   Let’s Get in Touch
                 </h3>
                 <p className="mb-6 text-gray-700">
-                  Have a project in mind? We’d love to hear from you. Send us a
-                  message and we’ll respond as soon as possible.
+                  For legal, compliance, or data protection inquiries, please
+                  contact:
                 </p>
 
                 <div className="space-y-5">
@@ -109,14 +109,12 @@ const Contact: React.FC = () => {
 
                   <div className="flex items-start space-x-3">
                     <div className="bg-blue-900 p-3 rounded-xl">
-                      <Globe className="text-white" size={20} />
+                      <Clock className="text-white" size={20} />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">
-                        Website
-                      </h4>
+                      <h4 className="font-semibold text-gray-900">Hours</h4>
                       <p className="text-gray-600 text-sm">
-                        {contactData.website}
+                        {contactData.hours}
                       </p>
                     </div>
                   </div>

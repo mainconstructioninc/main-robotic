@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: "/private/",
+      disallow: ["/private/", "/terms", "/provacy", "cookies", "/disclaimer"],
     },
     sitemap: "https://mainco.io/sitemap.xml",
   };

@@ -5,7 +5,6 @@ import { aboutData } from "@/mock";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-
 const About = () => {
   return (
     <div className="min-h-screen">
@@ -66,10 +65,15 @@ const About = () => {
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 viewport={{ once: true }}
               >
-                <div className="text-4xl md:text-5xl font-bold text-blue-900 mb-2">
+                <div className="text-3xl md:text-3xl font-bold text-blue-900 mb-2">
                   {stat.value}
                 </div>
-                <div className="text-gray-600 font-medium">{stat.label}</div>
+                <div className="text-gray-800 font-semibold mb-1">
+                  {stat.label}
+                </div>
+                <div className="text-gray-600 text-sm leading-relaxed">
+                  {stat.description}
+                </div>
               </motion.div>
             ))}
           </div>
@@ -101,28 +105,27 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Our Mission
-            </h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Mission</h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              At Main Robotic Construction Corporation, we are committed to
-              revolutionizing the construction industry through advanced
-              robotics, sustainable practices, and unwavering dedication to
-              quality. Since 2015, we’ve been at the forefront of innovation,
-              transforming how buildings are designed, constructed, and
-              delivered.
+              We build safer, faster, cleaner projects by putting robotics and
+              measurable QA at the core of delivery—so owners get certainty, not
+              surprises.
             </p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Vision</h2>
+            <p className="text-xl text-gray-700 leading-relaxed mb-8">
+              A built environment where zero-defect handovers and low-impact
+              sites are the norm
+            </p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Values</h2>
             <p className="text-xl text-gray-700 leading-relaxed">
-              Our mission is to create exceptional structures that stand the
-              test of time while minimizing environmental impact and maximizing
-              efficiency through cutting-edge technology.
+              Evidence first • People & safety • Impact-light operations
             </p>
           </motion.div>
         </div>
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-blue-50 overflow-hidden">
+      {/* <section className="py-20 bg-blue-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -167,7 +170,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

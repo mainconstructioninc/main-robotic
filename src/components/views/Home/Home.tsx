@@ -102,8 +102,8 @@ const HomePage = () => {
               Why Choose Main Robotic
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Leading the construction industry with innovation, precision, and
-              excellence.
+              Cutting-edge robotic technology ensures unmatched speed,
+              consistency, and a 99.9% precision rate.
             </p>
           </motion.div>
 
