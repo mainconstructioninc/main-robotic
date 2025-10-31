@@ -2,7 +2,7 @@ import React from "react";
 
 const CookiePolicy = () => {
   return (
-    <div className="max-w-5xl mx-auto py-20 mt-10">
+    <div className="max-w-5xl mx-auto py-20 mt-10 px-4 sm:px-6 lg:px-8">
       {/* Header */}
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-12">
         <div className="md:pr-8">

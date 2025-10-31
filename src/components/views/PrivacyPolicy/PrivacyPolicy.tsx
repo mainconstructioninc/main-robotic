@@ -52,7 +52,7 @@ const PrivacyPolicy: React.FC = () => {
             2. Information We May Collect
           </h2>
           <p>We may collect:</p>
-          <ul className="list-disc ml-6 mt-2 space-y-2">
+          <ul className="list-disc ml-6 mt-2 space-y-2 px-4 sm:px-6 lg:px-8">
             <li>
               <span className="font-semibold">Personal Identifiers:</span> Name,
               email, phone, company, position, business-specific details.

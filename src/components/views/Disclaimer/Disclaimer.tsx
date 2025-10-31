@@ -2,7 +2,7 @@ import React from "react";
 
 const Disclaimer = () => {
   return (
-    <div className="max-w-5xl mx-auto py-20 mt-10">
+    <div className="max-w-5xl mx-auto py-20 mt-10 px-4 sm:px-6 lg:px-8">
       {/* Header */}
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-12">
         <div className="md:pr-8">
@@ -24,6 +24,13 @@ const Disclaimer = () => {
             reliability of any information or materials provided. Any reference
             to past projects is for illustrative purposes only and does not
             constitute a guarantee of future results or pricing.
+          </p>
+          <p>
+            The company shall not be held liable for any direct or indirect
+            damages. The company shall not be held liable for any direct or
+            indirect damages resulting from reliance on such content or from
+            linked external sources. All information may be updated or modified
+            without prior notice.
           </p>
         </section>
       </div>

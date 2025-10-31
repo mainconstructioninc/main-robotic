@@ -2,7 +2,7 @@ import React from "react";
 
 const Term = () => {
   return (
-    <div className="max-w-5xl mx-auto py-20 mt-10">
+    <div className="max-w-5xl mx-auto py-20 mt-10 px-4 sm:px-6 lg:px-8">
       {/* Header */}
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-12">
         <div className="md:pr-8">
@@ -26,7 +26,7 @@ const Term = () => {
               target="_blank"
               className="text-blue-600 underline hover:text-blue-800"
             >
-              Mainco.io
+              (Mainco.io)
             </a>
             . These Terms of Use govern your access to and use of our website,
             which provides information about construction services, projects,

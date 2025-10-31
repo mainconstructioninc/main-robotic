@@ -152,7 +152,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t flex justify-between border-gray-800 mt-8 pt-8 text-center">
+        <div className="border-t flex flex-wrap justify-between border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm mb-2">
             © 2025 Main Construction Inc. | All Rights Reserved
           </p>
