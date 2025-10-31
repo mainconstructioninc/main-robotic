@@ -115,7 +115,7 @@ const Term = () => {
               target="_blank"
               className="text-blue-600 underline hover:text-blue-800"
             >
-              Mainco.io
+              (Mainco.io)
             </a>{" "}
             is provided “as is” and “as available.” We make no warranties,
             express or implied, regarding the accuracy, completeness, or
