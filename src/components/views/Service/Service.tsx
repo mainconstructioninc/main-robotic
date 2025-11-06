@@ -93,21 +93,16 @@ const Service: React.FC = () => {
                   {service.title}
                 </h3>
                 <p className="text-gray-600 mb-4">{service.description}</p>
-
-                <ul className="space-y-2 text-sm font-medium">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle size={16} className={bulletColor[color]} />
-                    <span>Advanced robotic automation</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle size={16} className={bulletColor[color]} />
-                    <span>Quality assurance and testing</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle size={16} className={bulletColor[color]} />
-                    <span>Sustainable construction practices</span>
-                  </li>
-                </ul>
+                {service.bullet && service.bullet.length > 0 && (
+                  <ul className="space-y-2 text-sm font-medium">
+                    {service.bullet.map((item, i) => (
+                      <li key={i} className="flex items-center gap-2">
+                        <CheckCircle size={16} className={bulletColor[color]} />
+                        <span>{item.name}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </motion.div>
             );
           })}

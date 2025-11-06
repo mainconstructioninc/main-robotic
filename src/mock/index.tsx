@@ -27,11 +27,16 @@ export interface HeroData {
   backgroundImage: string;
 }
 
+export interface ServiceBullet {
+  name: string;
+}
+
 export interface ServiceData {
   id: number;
   title: string;
   description: string;
   icon: LucideIcon;
+  bullet?: ServiceBullet[];
 }
 
 export interface ProjectData {
@@ -97,6 +102,11 @@ export const servicesData: ServiceData[] = [
     description:
       "Transform your commercial vision into reality with our advanced robotic construction solutions.",
     icon: Building2,
+    bullet: [
+      { name: "Advanced robotic automation" },
+      { name: "Quality assurance and testing" },
+      { name: "Sustainable construction practices" },
+    ],
   },
   {
     id: 2,
@@ -104,6 +114,11 @@ export const servicesData: ServiceData[] = [
     description:
       "Strategic development and construction services tailored for real estate portfolios.",
     icon: TrendingUp,
+    bullet: [
+      { name: "Portfolio-focused construction strategy" },
+      { name: "Cost-efficient development planning" },
+      { name: "High-value asset optimization" },
+    ],
   },
   {
     id: 3,
@@ -111,6 +126,11 @@ export const servicesData: ServiceData[] = [
     description:
       "Heavy-duty industrial construction with precision robotics and expert engineering.",
     icon: Factory,
+    bullet: [
+      { name: "Large-scale facility development" },
+      { name: "Industrial-grade structural engineering" },
+      { name: "Automation integration" },
+    ],
   },
   {
     id: 4,
@@ -118,6 +138,11 @@ export const servicesData: ServiceData[] = [
     description:
       "Bespoke luxury homes built with innovative technology and meticulous craftsmanship.",
     icon: Home,
+    bullet: [
+      { name: "Premium architectural customization" },
+      { name: "Smart home technology integration" },
+      { name: "High-end material sourcing" },
+    ],
   },
   {
     id: 5,
@@ -125,6 +150,11 @@ export const servicesData: ServiceData[] = [
     description:
       "State-of-the-art medical facilities designed for optimal patient care and efficiency.",
     icon: Heart,
+    bullet: [
+      { name: "Medical-grade construction standards" },
+      { name: "Sterile and safe facility planning" },
+      { name: "Patient-centric design" },
+    ],
   },
   {
     id: 6,
@@ -132,6 +162,11 @@ export const servicesData: ServiceData[] = [
     description:
       "Modern learning environments that inspire innovation and academic excellence.",
     icon: GraduationCap,
+    bullet: [
+      { name: "Campus planning and development" },
+      { name: "Learning-conducive space design" },
+      { name: "Durable and safe construction materials" },
+    ],
   },
   {
     id: 7,
@@ -139,6 +174,11 @@ export const servicesData: ServiceData[] = [
     description:
       "Premium hotels and resorts crafted for exceptional guest experiences.",
     icon: Hotel,
+    bullet: [
+      { name: "Luxury accommodation planning" },
+      { name: "Resort and recreational design" },
+      { name: "Brand experience-focused interiors" },
+    ],
   },
   {
     id: 8,
@@ -146,6 +186,11 @@ export const servicesData: ServiceData[] = [
     description:
       "Contemporary multifamily complexes with sustainable and smart living solutions.",
     icon: Building,
+    bullet: [
+      { name: "Community-oriented residential planning" },
+      { name: "Energy-efficient utilities" },
+      { name: "Modern living space optimization" },
+    ],
   },
   {
     id: 9,
@@ -153,6 +198,11 @@ export const servicesData: ServiceData[] = [
     description:
       "Advanced infrastructure for mission-critical technology operations.",
     icon: Server,
+    bullet: [
+      { name: "High-security infrastructure" },
+      { name: "Cooling and power redundancy systems" },
+      { name: "Scalable server room design" },
+    ],
   },
   {
     id: 10,
@@ -160,6 +210,11 @@ export const servicesData: ServiceData[] = [
     description:
       "Efficient restaurant construction with rapid deployment and quality assurance.",
     icon: Utensils,
+    bullet: [
+      { name: "Brand-consistent interior & layout" },
+      { name: "Compliance with food facility standards" },
+      { name: "Fast-track build deployment" },
+    ],
   },
   {
     id: 11,
@@ -167,6 +222,11 @@ export const servicesData: ServiceData[] = [
     description:
       "Expert plumbing systems with robotic precision and sustainable solutions.",
     icon: Droplet,
+    bullet: [
+      { name: "Residential & commercial plumbing" },
+      { name: "Leak detection & repairs" },
+      { name: "Eco-friendly water systems" },
+    ],
   },
   {
     id: 12,
@@ -174,6 +234,11 @@ export const servicesData: ServiceData[] = [
     description:
       "Premium flooring installations with advanced materials and techniques.",
     icon: Square,
+    bullet: [
+      { name: "Tile, hardwood, laminate & vinyl" },
+      { name: "Precision leveling & finish" },
+      { name: "Durable material sourcing" },
+    ],
   },
   {
     id: 13,
@@ -181,6 +246,11 @@ export const servicesData: ServiceData[] = [
     description:
       "Sustainable energy solutions integrated with cutting-edge roofing technology.",
     icon: Sun,
+    bullet: [
+      { name: "Solar panel installation" },
+      { name: "Energy efficiency planning" },
+      { name: "Long-term sustainability support" },
+    ],
   },
   {
     id: 14,
@@ -188,6 +258,11 @@ export const servicesData: ServiceData[] = [
     description:
       "Smart climate control systems for optimal comfort and energy efficiency.",
     icon: Wind,
+    bullet: [
+      { name: "Heating and cooling system installation" },
+      { name: "Smart thermostat integration" },
+      { name: "Energy-efficient airflow design" },
+    ],
   },
   {
     id: 15,
@@ -195,6 +270,11 @@ export const servicesData: ServiceData[] = [
     description:
       "Luxury kitchen and bathroom installations with modern design excellence.",
     icon: Bath,
+    bullet: [
+      { name: "Custom cabinetry and countertops" },
+      { name: "Premium fixtures & fittings" },
+      { name: "Luxury interior aesthetic design" },
+    ],
   },
   {
     id: 16,
@@ -202,6 +282,11 @@ export const servicesData: ServiceData[] = [
     description:
       "Robust foundation systems engineered with precision robotics and expertise.",
     icon: Layers,
+    bullet: [
+      { name: "Site preparation and excavation" },
+      { name: "Structural reinforcement engineering" },
+      { name: "Long-term durability assurance" },
+    ],
   },
 ];
 
