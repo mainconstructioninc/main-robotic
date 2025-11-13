@@ -467,7 +467,7 @@ export const aboutData: AboutData = {
 };
 
 export const contactData: ContactData = {
-  address: "2150 North Central Expressway McKinney, TX 75070-3508 ",
+  address: "The Summit, 2150 S Central Expy STE 200, McKinney, TX 75070, United States",
   phone: "+1 (555) 123-4567",
   email: "support@mainco.io",
   hours: "Typical Response Time: 3–5 business days",

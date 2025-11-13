@@ -136,7 +136,7 @@ const Footer = () => {
                   className="text-blue-400 mt-1 flex-shrink-0"
                 />
                 <span className="text-gray-400 text-sm">
-                  2150 North Central Expressway McKinney, TX 75070-3508
+                  The Summit, 2150 S Central Expy STE 200, McKinney, TX 75070, United States
                 </span>
               </li>
 
